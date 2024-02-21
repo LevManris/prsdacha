@@ -1,16 +1,21 @@
-/* Стили для элементов страницы */
 body {
     font-family: Arial, sans-serif;
+    background-image: url(https://pibig.info/uploads/posts/2022-06/1655666915_22-pibig-info-p-krasivie-kartinki-s-prirodoi-krasivo-22.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #00ff9d;
-    color: black;
+    background-color: rgba;
+    color: white;
+    padding: 20px;
 }
 
 header h1 {
     margin: 0;
-    padding: 20px;
 }
 
 header nav ul {
@@ -24,12 +29,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: white;
 }
 
 main {
@@ -38,15 +43,29 @@ main {
 
 main section {
     margin-bottom: 20px;
+    color: white;
 }
 
 main section h2 {
-    color: #000000;
+    color: #ffffff;
 }
 
 footer {
-    background-color: #00ff9d;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     text-align: center;
     padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: darken(#ffffff, 20%);
+}
+
