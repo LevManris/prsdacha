@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(https://pibig.info/uploads/posts/2022-06/1655666915_22-pibig-info-p-krasivie-kartinki-s-prirodoi-krasivo-22.jpg);
+    background-image: url(https://gamemag.ru/images/imagemanager/cache/74/8f11/748f11_3.-.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,10 +31,32 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
     text-decoration: white;
+    color: #4fdbde;
+}
+
+header nav ul li ul {
+    display: none; /* скрываем вложенные списки */
+    position: absolute; /* абсолютное позиционирование */
+    background-color: rgba(0, 0, 0, 0.5); /* задаем фон для выпадающего меню */
+    padding: 10px;
+}
+
+header nav ul li:hover ul {
+    display: block; /* отображаем выпадающее меню при наведении на элемент списка */
+}
+
+header nav ul li ul li {
+    display: block;
+}
+
+header nav ul li ul li a {
+    color: white; /* цвет ссылок в выпадающем меню */
+    text-decoration: none;
 }
 
 main {
